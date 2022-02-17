@@ -1,0 +1,158 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.=== На https://github.com/KulinaNikita создать репозиторий JSON
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.=== git clone https://github.com/KulinaNikita/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”. === cd JSON
+                                                        start .
+                                                        touch new.json
+ 7. Добавить файл под гит. === git add .
+
+ 8. Закоммитить файл. === git commit -m "new json"
+
+ 9. Отправить файл на внешний GitHub репозиторий. ===  git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. === vim new.json
+{
+	"firstName": "Nikita",
+	"lastName": "Kulina",
+	"age": 29,
+	"homePets": 1,
+	"salary": "500$"
+}
+
+ 11. Отправить изменения на внешний репозиторий. === git commit -am "new json"
+                                                     git push
+ 12. Создать файл preferences.json ===  touch preferences.json
+  
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. === vim preferences.json
+{
+
+“favoriteMovie”: “1+1”,
+
+“favoriteSeries”: “BreakingBad”,
+
+“Food”: "pasta",
+
+“season”: "summer",
+
+“country”: "USA”
+
+
+}
+
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON === touch skills.json
+                 vim skills.json
+
+ 15. Отправить сразу 2 файла на внешний репозиторий. ==== git status
+                                                     git add .
+                                                     git commit -m "new json"
+                                                     git push
+
+ 16. На веб интерфейсе создать файл bug_report.json. ==== на https://github.com/KulinaNikita/JSON в репозитории JSON создать файл "Add file", "Create new file" с именем bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Для сохранения нажать кнопку "Commit change"
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. === выбрать файл bug_report.json, нажать кнопку "Edit this file"
+{
+  "отчет_ошибке" :
+	   {
+           "заголовок" : " имя_заголовок " ,
+	   "шаги_к_воспроизведению" : [ " шаг1 " , " шаг2 " , " шаг3 " ],
+	   "ожидаемый_результат" : " the_result_we_need " ,
+	   "фактический_результат" : " результат_которого_должен_быть " ,
+	   «коэффициент приоритета» : [ « Низкий » , « Средний » , « Высокий » ],
+	   «фактор серьезности» : [ « Незначительный » , « Незначительный » , « Основной » , « Критический » , « Блокирующий » ]
+	   }
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === После редактирования нажать кнопку "Commit change".
+ 20. Синхронизировать внешний и локальный репозиторий JSON === в терминале ввести git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML. ===  На https://github.com/KulinaNikita создать репозиторий XML 
+
+ 22. Клонировать репозиторий XML на локальный компьютер. === git clone https://github.com/KulinaNikita/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.=== cd XML
+                                                      touch new.xml
+ 24. Добавить файл под гит. === git status
+                                git add .
+
+ 25. Закоммитить файл. === git commit -m "new xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий. === git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. === vim new.xml
+<?xml version="1.0" encoding="windows-1251"?>
+<aboutMe>
+	<firstName>Nikita</firstName>
+	<lastName>Kulina</lastName>
+	<age>29</age>
+	<homePets>1</homePets>
+	<salary>500$</salary>
+</aboutMe>
+
+ 28. Отправить изменения на внешний репозиторий. ===  git commit -am "new xml"
+                                                      git push
+
+ 29. Создать файл preferences.xml  === touch preference.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.  ===  vim preference.xml
+<?xml version="1.0" encoding="windows-1251"?>
+<preferences>
+ <favoriteMovie>1+1</favoriteMovie>
+ <favoriteSeries>BreakingBad</favoriteSeries>
+ <Food>pasta</Food>
+ <season>summer</season>
+ <country>USA</country>
+</preferences>
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML === touch skills.xml
+                vim skills.xml
+<?xml version="1.0" encoding="windows-1251"?>
+<skills>
+	<skill1>Базовая теория</skill1>
+	<skill2>КлиентСерверная архитектура</skill2>
+	<skill3>Коды ответов HTTP сервера</skill3>
+	<skill4>Тестирование API</skill4>
+	<skill5>Charles и Fiddler</skill5>
+	<skill6>Dev Tools</skill6>
+	<skill7>VPN</skill7>
+	<skill8>Мобильное тестирование</skill8>
+	<skill9>Jmeter</skill9>
+	<skill10>Scrum</skill10>
+</skill>
+ 32. Сделать коммит в одну строку. === git add . && git commit -m "new xml"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий. === git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.  === на https://github.com/KulinaNikita/XML в репозитории XML создать файл "Add file", "Create new file" с именем bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Для сохранения нажать кнопку "Commit change"
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. === выбрать файл bug_report.xml, нажать кнопку "Edit this file"
+<?xml version="1.0" encoding="windows-1251"?>
+<bug_report>
+  <title>name_title</title>
+  <steps_to_reproduction>
+    <number_step>Step1</number_step>
+    <number_step>Step2</number_step>
+    <number_step>Step3</number_step>
+  </steps_to_reroduction>
+  <expected_result>the_result_we_need</expected_result>
+  <factual_result>the_result_of_which_must_be</factual_result>
+  <priority_factor>
+    <priority_factor1>Low</priority_factor1>
+    <priority_factor2>Medium</priority_factor2>
+    <priority_factor3>High</priority_factor3>
+  </priority_factor>
+  <severity_factor>
+    <severity_factor1>Trivial</severity_factor1>
+    <severity_factor2>Minor</severity_factor2>
+    <severity_factor3>Major</severity_factor3>
+    <severity_factor4>Critical</severity_factor4>
+    <severity_factor5>Blocker</severity_factor5>
+  <severity_factor>
+</bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === После редактирования нажать кнопку "Commit change".
+
+ 38. Синхронизировать внешний и локальный репозиторий XML === в терминале ввести git pull
