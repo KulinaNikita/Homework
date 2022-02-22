@@ -1,0 +1,56 @@
+https://github.com/KulinaNikita/GitHub
+1. На локальном репозитории сделать ветки для:
+- Postman       === git branch Postman
+- Jmeter   === git branch Jmeter
+- CheckLists  === git branch CheckLists
+- Bag Reports   === git branch Bug_Reports
+- SQL   === git branch SQL
+- Charles  ==== git branch Charles
+- Mobile testing   === git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий  === git push origin --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта === git checkout Bug_Reports
+touch bug_report.txt
+vim bug_report.txt
+1 Идентификатор
+2 Заголовок
+3 Шаги возспроизведения
+4 Актуальный результат
+5 Ожидаемый результат
+6 Окружение
+7 Критичность 
+8 Приоритет
+9 Приложения - скриншот, видео
+10 Возможность обойти баг
+11 Воспроизводимость 
+12 Комментарии
+
+4. Запушить структуру багрепорта на внешний репозиторий === git add .
+git commit -m "bug_report"
+git push
+
+5. Вмержить ветку Bag Reports в Main === git checkout main
+git merge Bug_Reports
+
+6. Запушить main на внешний репозиторий. === git push
+
+7. В ветке CheckLists набросать структуру чек листа. === git checkout CheckLists
+touch checkLists.txt
+vim checkLists.txt
+
+1 Номер
+2 Описание проверки
+3 Статус
+4 Комментарий
+
+8. Запушить структуру на внешний репозиторий === git add .
+git commit -m "checkLists"
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в mainНажать  === Compare & pull request
+Create pull request
+Merge pull request
+Confirm merge
+10. Синхронизировать Внешнюю и Локальную ветки Main  ===git checkout main
+
+git pull
