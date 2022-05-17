@@ -10,7 +10,7 @@ employee_name Varchar(50) not null
 
 select * from employees;
 
---Íàïîëíèòü òàáëèöó employee 70 ñòðîêàìè.
+--Наполнить таблицу employee 70 строками.
 
 insert into employees(id, employee_name)
 values (default, 'Noah'),
@@ -84,8 +84,8 @@ values (default, 'Noah'),
 (default, 'Mason'),
 (default, 'Camila');
 
---Òàáëèöà salary
---Ñîçäàòü òàáëèöó salary
+--Таблица salary
+--Создать таблицу salary
 -- id. Serial  primary key,
 -- monthly_salary. Int, not null
 
@@ -96,7 +96,7 @@ create table salary1(
 
 select * from salary1;
 
---Íàïîëíèòü òàáëèöó salary 15 ñòðîêàìè:
+--Наполнить таблицу salary 15 строками:
 insert into salary1(monthly_salary1)
 values (1100),
        (1200),
@@ -114,8 +114,8 @@ values (1100),
        (2400),
        (2500);
    
---Òàáëèöà employee_salary
---Ñîçäàòü òàáëèöó employee_salary
+--Таблица employee_salary
+--Создать таблицу employee_salary
 -- id. Serial  primary key,
 -- employee_id. Int, not null, unique
 -- salary_id. Int, not null
@@ -128,8 +128,8 @@ salary_id Int not null
 
 select * from employee_salary1;
 
---Íàïîëíèòü òàáëèöó employee_salary 40 ñòðîêàìè:
--- â 10 ñòðîê èç 40 âñòàâèòü íåñóùåñòâóþùèå employee_id
+--Наполнить таблицу employee_salary 40 строками:
+-- в 10 строк из 40 вставить несуществующие employee_id
 insert into employee_salary1(employee_id, salary_id)
 values (3, 7),
 (1, 4),
@@ -172,8 +172,8 @@ values (3, 7),
 (79, 13),
 (80, 23);
 
---Òàáëèöà roles
---Ñîçäàòü òàáëèöó roles
+--Таблица roles
+--Создать таблицу roles
 -- id. Serial  primary key,
 -- role_name. int, not null, unique
 
@@ -183,12 +183,12 @@ role_name int unique not null
 );
 
 select * from roles1;
---Ïîìåíÿòü òèï ñòîëáà role_name ñ int íà varchar(30)
+--Поменять тип столба role_name с int на varchar(30)
 
 alter table roles1 
 alter column role_name type varchar(30);
 
---Íàïîëíèòü òàáëèöó roles 20 ñòðîêàìè:
+--Наполнить таблицу roles 20 строками:
 insert into roles1(role_name)
 values ('Junior Python developer'),
 ('Middle Python developer'),
@@ -211,11 +211,11 @@ values ('Junior Python developer'),
 ('Middle Automation QA engineer'),
 ('Senior Automation QA engineer');
 
---Òàáëèöà roles_employee
---Ñîçäàòü òàáëèöó roles_employee
+--Таблица roles_employee
+--Создать таблицу roles_employee
 -- id. Serial  primary key,
--- employee_id. Int, not null, unique (âíåøíèé êëþ÷ äëÿ òàáëèöû employees, ïîëå id)
--- role_id. Int, not null (âíåøíèé êëþ÷ äëÿ òàáëèöû roles, ïîëå id)
+-- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
+-- role_id. Int, not null (внешний ключ для таблицы roles, поле id)
 
 create table roles_employee(
 id serial  primary key,
@@ -228,7 +228,7 @@ role_id Int not null,
 
 select * from roles_employee;
 
---Íàïîëíèòü òàáëèöó roles_employee 40 ñòðîêàìè:
+--Наполнить таблицу roles_employee 40 строками:
 
 insert into roles_employee(employee_id, role_id)
 values (7,2), 
